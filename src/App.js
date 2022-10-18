@@ -9,14 +9,17 @@ import ProtectedRoute from './components/ProtectedRoute.js';
 import PasswordReset from './components/PasswordReset/PasswordReset.js';
 import Nav from './components/Nav/Nav.js';
 import Header from './components/Header/Header.js';
+import Contact from './components/Contact/Contact.js';
+import FAQ from './components/FAQ/FAQ.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Nav />
+      
       <main>
         <AuthContentextProvider>
+        <Nav />
           <Routes>
             <Route path='/' element={
               <ProtectedRoute>
@@ -26,6 +29,8 @@ function App() {
             <Route path='/signup' element={<SignUp />} />
             <Route path='/signin' element={<SignIn />} />
             <Route path='/reset' element={<PasswordReset />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/faq' element={<FAQ />} />
             <Route path='/*' element={<Navigate to="/" replace={true} />} />
           </Routes>
         </AuthContentextProvider>

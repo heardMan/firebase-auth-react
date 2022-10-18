@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+import menuLogo from './menu-24px-light.svg'
 
 import './Nav.css';
 
 const Nav = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
-
-    const navigate = useNavigate();
 
     const toggle = ()=>{ 
         if(menuOpen===false){
@@ -16,22 +16,20 @@ const Nav = () => {
         return setMenuOpen(false);
      }
 
-
-
     return (
         <nav id='nav'>
             <button className='fab toggle' onClick={toggle}>
-                <img alt='menu icon' className='toggle' src='#' />
+                <img alt='menu icon' className='toggle' src={menuLogo} />
             </button>
             <div className={menuOpen===true?'menu menuOpen':'menu'}>
                 <div className='menu-item'>
-                    <a href='./'>Home</a>
+                    <Link to='/'>Home</Link>
                 </div>
                 <div className='menu-item'>
-                    <a href='./contact'>Contact</a>
+                    <Link to='/contact'>Contact</Link>
                 </div>
                 <div className='menu-item'>
-                    <a href='./projects'>Projects</a>
+                    <Link to='./faq'>FAQ</Link>
                 </div>
             </div>
         </nav>
