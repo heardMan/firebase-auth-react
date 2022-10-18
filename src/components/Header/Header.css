@@ -1,0 +1,19 @@
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background-color: #008080;
+    z-index: 900;
+    height: 84px;
+}
+
+#header .title {
+margin-left: 1rem;
+}
+
+#spacer {
+    position: relative;
+    height: 84px;
+    width: 100%;
+}
