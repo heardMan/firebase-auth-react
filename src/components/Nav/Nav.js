@@ -44,7 +44,7 @@ const Nav = () => {
 
 
                 {
-                    authUser.auth === undefined || authUser.auth === null?
+                    authUser === null || authUser.auth === null?
                         ''
                         :
                         <SignOut />

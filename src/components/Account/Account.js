@@ -155,7 +155,7 @@ const Account = () => {
                 </div>
                 <div className='email-verified'>
                     {
-                        authUser.auth === undefined ?
+                        authUser.auth === null || authUser.auth === undefined ?
                             <p className='verified'>email Verified</p>
                             :
                             authUser.auth.emailVerified === true ?
