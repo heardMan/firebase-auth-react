@@ -213,9 +213,9 @@ const Account = () => {
 
             </div>
 
-            <div>
+            {/* <div>
                 <SignOut />
-            </div>
+            </div> */}
 
             {/* Email verification sent confirmation modal */}
             <div className={verifyModalOpen === true ? 'verifyModal open' : 'verifyModal'}>

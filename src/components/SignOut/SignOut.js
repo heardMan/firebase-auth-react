@@ -11,14 +11,15 @@ const SignOut = () => {
     const handleLogOut = async () => {
         try {
             await logOut();
-            navigate('/signin')
+            navigate('/signin');
+            
         }
         catch (e) {
             console.log(e.message)
         }
     }
 
-    return (<button className='signOut' onClick={handleLogOut}>Sign Out</button>);
+    return (<button className='signOut' onClick={handleLogOut}><span>Sign Out</span></button>);
 };
 
 export default SignOut;

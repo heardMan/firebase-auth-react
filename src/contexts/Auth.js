@@ -77,6 +77,7 @@ export const AuthContentextProvider = ({ children }) => {
         return signInWithEmailAndPassword(AUTH, email, password);
     }
     const logOut = () => {
+        setAuthUser({})
         return signOut(AUTH);
     }
 
@@ -85,7 +86,10 @@ export const AuthContentextProvider = ({ children }) => {
             const authObj = { usr };
 
             const afunc = async () => {
-                const data = await User.getUserProfile(usr.uid);
+
+                const uid = usr!==null? usr.uid : 'not logged in';
+
+                const data = await User.getUserProfile(uid);
                 //console.log(usr);
                 //console.log(data);
 

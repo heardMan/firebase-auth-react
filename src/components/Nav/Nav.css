@@ -5,7 +5,7 @@
     width: 64px;
     height: 64px;
     border-radius: 100%;
-    border: solid #95a5a6 1px;
+    border: solid #e8e8e8 1px;
     background-color: #008080;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
     z-index: 901;
@@ -29,26 +29,27 @@
     right: 48px;
     height: 0px;
     width: 0px;
-    color: #BDC3C7;
+    color: #e8e8e8;
     z-index: 900;
 }
 
 .menu-item {
-    position: absolute;
+    /* position: absolute;
     bottom: -49px;
-    right: -49px;
+    right: -49px; */
     text-align: center;
     text-decoration: none;
     line-height: 3.7;
     padding: 0.5rem;
     margin: 1rem;
-    height: 48px;
-    width: 48px;
-    color: #BDC3C7;
+    height: 64px;
+    width: 64px;
+    color: #e8e8e8;
     background-color: #008080;
-    font-size: small;
-    border: solid #BDC3C7 1px;
-    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    border: solid #e8e8e8 1px;
+    border-radius: 50px;
     box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
     z-index: 901;
     transition: 0.5s;
@@ -61,47 +62,75 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-decoration: none;
-    color: #BDC3C7;
+    color: #e8e8e8;
 }
 
 .menu>:nth-child(1) {
+    position: absolute;
+    bottom: 30px;
+    right: -149px;
     transition-delay: 0s;
 }
 
 .menuOpen>:nth-child(1) {
     position: absolute;
-    bottom: -49px;
-    right: 100px;
+    bottom: 30px;
+    /* right: 100px; */
+    right: -55px;
     transition: 0.5s;
     transition-delay: 0s;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 .menu>:nth-child(2) {
+    position: absolute;
+    bottom: 110px;
+    right: -149px;
     transition-delay: 0.5s;
 }
 
 .menuOpen>:nth-child(2) {
     position: absolute;
-    bottom: 60px;
-    right: 60px;
+    bottom: 110px;
+    /* right: 100px; */
+    right: -55px;
     transition: 0.5s;
     transition-delay: 0.5s;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 .menu>:nth-child(3) {
+    position: absolute;
+    bottom: 190px;
+    right: -149px;
     transition-delay: 1s;
 }
 
 .menuOpen>:nth-child(3) {
     position: absolute;
-    bottom: 100px;
-    right: -49px;
+    bottom: 190px;
+    /* right: 100px; */
+    right: -55px;
     transition: 0.5s;
     transition-delay: 1s;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+}
 
+.menu>:nth-child(4) {
+    position: absolute;
+    bottom: 295px;
+    right: -149px;
+    transition-delay: 1.5s;
+}
+
+.menuOpen>:nth-child(4) {
+    position: absolute;
+    bottom: 295px;
+    /* right: 100px; */
+    right: -30px;
+    transition: 0.5s;
+    transition-delay: 1.5s;
+    /* transform: scale(1.2); */
 }
 
 .menu-link {
@@ -120,35 +149,71 @@
         top: 0.5rem;
     }
 
-    .menu-item {
+    /* .menu-item {
         position: absolute;
         top: -15px;
         left: -49px;
+    } */
+
+    .menu>:nth-child(1) {
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        transition-delay: 0s;
     }
 
     .menuOpen>:nth-child(1) {
         position: absolute;
-        top: 75px;
-        left: -49px;
+        top: 60px;
+        left: -55px;
         transition: 0.5s;
         transition-delay: 0s;
         z-index: 899;
     }
 
+    .menu>:nth-child(2) {
+        position: absolute;
+        top: 140px;
+        left: 50px;
+        transition-delay: 0.5s;
+    }
+
     .menuOpen>:nth-child(2) {
         position: absolute;
-        top: 163px;
-        left: -49px;
+        top: 140px;
+        left: -55px;
         transition: 0.5s;
         transition-delay: 0.5s;
     }
 
+    .menu>:nth-child(3) {
+        position: absolute;
+        top: 220px;
+        left: 50px;
+        transition-delay: 1s;
+    }
+
     .menuOpen>:nth-child(3) {
         position: absolute;
-        top: 250px;
-        left: -49px;
+        top: 220px;
+        left: -55px;
         transition: 0.5s;
         transition-delay: 1s;
+    }
+
+    .menu>:nth-child(4) {
+        position: absolute;
+        top: 330px;
+        left: 50px;
+        transition-delay: 1.5s;
+    }
+
+    .menuOpen>:nth-child(4) {
+        position: absolute;
+        top: 325px;
+        left: -30px;
+        transition: 0.5s;
+        transition-delay: 1.5s;
     }
 }
 
@@ -178,8 +243,8 @@
         position: absolute;
         top: 0px;
         left: -335px;
-        transition: 0.5s;
-        transition-delay: 0s;
+        /* transition: 0.5s;
+        transition-delay: 0s; */
         z-index: 899;
     }
 
@@ -187,16 +252,16 @@
         position: absolute;
         top: 0px;
         left: -195px;
-        transition: 0.5s;
-        transition-delay: 0.5s;
+        /* transition: 0.5s;
+        transition-delay: 0.5s; */
     }
 
     .menu>:nth-child(3) {
         position: absolute;
         top: 0px;
         left: -49px;
-        transition: 0.5s;
-        transition-delay: 1s;
+        /* transition: 0.5s;
+        transition-delay: 1s; */
     }
 
     .menu {

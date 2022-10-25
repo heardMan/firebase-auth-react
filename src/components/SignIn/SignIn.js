@@ -66,9 +66,8 @@ const SignIn = () => {
 
             console.log('logging')
             try {
-                await logIn(email, password);
-                navigate('/');
-
+                await logIn(email, password).then(()=>navigate('/'));
+                
             }
             catch (e) {
                 console.log(e.message)
