@@ -219,7 +219,8 @@
     }
 }
 
-@media (min-width: 850px) {
+
+/* @media (min-width: 850px) {
 
     .fab {
         display: none;
@@ -245,8 +246,6 @@
         position: absolute;
         top: 0px;
         left: -335px;
-        /* transition: 0.5s;
-        transition-delay: 0s; */
         z-index: 899;
     }
 
@@ -254,20 +253,23 @@
         position: absolute;
         top: 0px;
         left: -195px;
-        /* transition: 0.5s;
-        transition-delay: 0.5s; */
     }
 
     .menu>:nth-child(3) {
         position: absolute;
         top: 0px;
         left: -49px;
-        /* transition: 0.5s;
-        transition-delay: 1s; */
+    }
+
+    .menu>:nth-child(4) {
+        position: absolute;
+        top: 0px;
+        left: -49px;
     }
 
     .menu {
         top: 1rem !important;
         right: 8vw;
     }
-}
+    
+} */

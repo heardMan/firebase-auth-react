@@ -31,14 +31,16 @@ const Nav = () => {
                 <img alt='menu icon' className='toggle' src={menuLogo} />
             </button>
             <div className={menuOpen === true ? 'menu menuOpen' : 'menu'}>
-                <div className='menu-item'>
+
+                <div className='menu-item' onClick={toggle}>
                     <Link to='/'>Home</Link>
                 </div>
-                <div className='menu-item'>
+
+                <div className='menu-item' onClick={toggle}>
                     <Link to='/contact'>Contact</Link>
                 </div>
 
-                <div className='menu-item'>
+                <div className='menu-item' onClick={toggle}>
                     <Link to='./faq'>FAQ</Link>
                 </div>
 
