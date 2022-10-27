@@ -43,8 +43,7 @@ const Nav = () => {
                 <div className='menu-item' onClick={toggle}>
                     <Link to='./faq'>FAQ</Link>
                 </div>
-
-
+                
                 {
                     authUser === null || authUser.auth === null?
                         ''
