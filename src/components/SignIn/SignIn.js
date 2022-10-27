@@ -55,7 +55,9 @@ const SignIn = () => {
 
     const [allowSubmit, setAllowSubmit] = useState(false);
 
-    const { logIn } = useAuth();
+    //const [loading, setLoading] = useState(false)
+
+    const { logIn, authUser } = useAuth();
     const navigate = useNavigate();
 
     const handleSubmit = async e => {
@@ -66,11 +68,10 @@ const SignIn = () => {
 
             console.log('logging')
             try {
-                await logIn(email, password).then(()=>navigate('/'));
-                
+                await logIn(email, password);
             }
             catch (e) {
-                console.log(e.message)
+                console.log(e.message);
             }
         }
 
@@ -95,6 +96,10 @@ const SignIn = () => {
         validateEmail();
         validatePassword();
 
+        if(authUser.auth!==null){
+            return navigate('/');
+        }
+
         if (
             emailValid1 === '' && email.length > 0 &&
             passwordValid === '' && password.length > 0
@@ -108,7 +113,8 @@ const SignIn = () => {
         //useEffect Dependency Array
         [
             emailValid1, email.length,
-            passwordValid, password
+            passwordValid, password,
+            navigate,authUser
         ]
     );
 

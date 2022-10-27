@@ -86,7 +86,7 @@
     position: absolute;
     bottom: 110px;
     right: -149px;
-    transition-delay: 0.5s;
+    transition-delay: 0.25s;
 }
 
 .menuOpen>:nth-child(2) {
@@ -95,7 +95,7 @@
     /* right: 100px; */
     right: -55px;
     transition: 0.5s;
-    transition-delay: 0.5s;
+    transition-delay: 0.25s;
     /* transform: scale(1.2); */
 }
 
@@ -103,7 +103,7 @@
     position: absolute;
     bottom: 190px;
     right: -149px;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 
 .menuOpen>:nth-child(3) {
@@ -112,7 +112,7 @@
     /* right: 100px; */
     right: -55px;
     transition: 0.5s;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
     /* transform: scale(1.2); */
 }
 
@@ -120,7 +120,7 @@
     position: absolute;
     bottom: 295px;
     right: -149px;
-    transition-delay: 1.5s;
+    transition-delay: 0.75s;
 }
 
 .menuOpen>:nth-child(4) {
@@ -129,13 +129,15 @@
     /* right: 100px; */
     right: -30px;
     transition: 0.5s;
-    transition-delay: 1.5s;
+    transition-delay: 0.75s;
     /* transform: scale(1.2); */
 }
 
 .menu-link {
     z-index: 900;
 }
+
+
 
 
 
@@ -175,7 +177,7 @@
         position: absolute;
         top: 140px;
         left: 50px;
-        transition-delay: 0.5s;
+        transition-delay: 0.25s;
     }
 
     .menuOpen>:nth-child(2) {
@@ -183,14 +185,14 @@
         top: 140px;
         left: -55px;
         transition: 0.5s;
-        transition-delay: 0.5s;
+        transition-delay: 0.25s;
     }
 
     .menu>:nth-child(3) {
         position: absolute;
         top: 220px;
         left: 50px;
-        transition-delay: 1s;
+        transition-delay: 0.5s;
     }
 
     .menuOpen>:nth-child(3) {
@@ -198,14 +200,14 @@
         top: 220px;
         left: -55px;
         transition: 0.5s;
-        transition-delay: 1s;
+        transition-delay: 0.5s;
     }
 
     .menu>:nth-child(4) {
         position: absolute;
         top: 330px;
         left: 50px;
-        transition-delay: 1.5s;
+        transition-delay: 0.75s;
     }
 
     .menuOpen>:nth-child(4) {
@@ -213,7 +215,7 @@
         top: 325px;
         left: -30px;
         transition: 0.5s;
-        transition-delay: 1.5s;
+        transition-delay: 0.75s;
     }
 }
 
